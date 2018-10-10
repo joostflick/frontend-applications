@@ -1,0 +1,9 @@
+<template>
+    <div>
+        <h1>Vragen</h1>
+        <app-input></app-input>
+        <app-input></app-input>
+        <app-input></app-input>
+        <app-input></app-input>
+    </div>
+</template>
