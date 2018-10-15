@@ -16,3 +16,19 @@ npm run build
 ```
 
 For more information see the [docs for vueify](https://github.com/vuejs/vueify).
+
+## Dependencies
+
+### Babel
+
+### Babelify
+
+### Uglify
+
+### Browserify
+
+### Vueify
+
+### Watchify
+
+## The idea
