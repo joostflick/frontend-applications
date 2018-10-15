@@ -1,9 +1,16 @@
 <template>
-    <div>
-        <h1>Vragen</h1>
-        <app-input></app-input>
-        <app-input></app-input>
-        <app-input></app-input>
-        <app-input></app-input>
+    <div id="questionform">
+        <app-input v-for="question in questions" v-bind:key="question.id" :question='question' />
     </div>
 </template>
+
+<script>
+import questions from './questions.js'
+export default {
+    data () {
+        return {
+            questions
+        }
+    }
+}
+</script>

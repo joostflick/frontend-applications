@@ -1,13 +1,11 @@
 <template>
     <div>
-        <h3>Is dit het geval?</h3>
+        <h3>{{question.question}}</h3>
        <select v-model="selected">
   <option disabled value="Leeg">Selecteer één antwoord:</option>
-  <option>Optie 1</option>
-  <option>Optie 2</option>
-  <option>Optie 3</option>
+  <option v-for="option in question.options" v-bind:key="option.id" :option='option'>{{option}}</option>
 </select>
-<span>Geselecteerd: {{ selected }}</span>
+<p>Geselecteerd: {{ selected }}</p>
     </div>
 </template>
 <script>
@@ -16,6 +14,9 @@ export default {
         return {
             selected: 'Nog niets'
         }
+    },
+    props: {
+        question: Object
     }
 }
 </script>

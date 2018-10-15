@@ -6,9 +6,10 @@ import Input from './Input.vue'
 Vue.component('app-form', Form)
 Vue.component('app-input', Input)
 
+
 new Vue({
-  el: '#app',
-  render: h => h(App)
-});
-
-
+  el     : '#app', 
+  components: { app: App,
+   },  
+  render : h => h('app')
+})
