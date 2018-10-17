@@ -9,23 +9,23 @@ export default [
     {
       question: "Herkomst ouders",
       options: [
-        "Beide ouders Nederlands",
-        "Beide ouders niet Nederlands",
-        "Een van de ouders Nederlands en de andere niet Nederlands"
+        {label: "Beide ouders Nederlands", value: "1"},
+        {label: "Beide ouders niet Nederlands", value: "1"},
+        {label: "Een van de ouders Nederlands en de andere niet Nederlands", value: "1"}
       ]
     },
     {
       question: "Type huishouden",
       options: [
-        "Gehuwd paar met kinderen",
-        "Eenouderhuishouden",
-        "Eenpersoonshuishouden",
-        "Gehuwd paar zonder kinderen",
-        "Institutioneel huishouden",
-        "Niet-gehuwd paar met kinderen",
-        "Niet-gehuwd paar zonder kinderen",
-        "Overig huishouden",
-        "Onbekend huishouden"
+        {label: "Gehuwd paar met kinderen", value: "1"},
+        {label: "Eenouderhuishouden", value: "1"},
+        {label: "Eenpersoonshuishouden", value: "1"},
+        {label: "Gehuwd paar zonder kinderen", value: "1"},
+        {label: "Institutioneel huishouden", value: "1"},
+        {label: "Niet-gehuwd paar met kinderen", value: "1"},
+        {label: "Niet-gehuwd paar zonder kinderen", value: "1"},
+        {label: "Overig huishouden", value: "1"},
+        {label: "Onbekend huishouden", value: "1"}
       ]
     },
     { question: "Gescheiden ouders", options: ["Nee", "Ja"] },

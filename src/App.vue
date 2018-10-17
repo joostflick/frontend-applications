@@ -10,7 +10,7 @@
     <div v-else>
     <app-secondopinion></app-secondopinion>
     </div>
-    <app-percentage v-bind:percentage="formula"></app-percentage>
+    <app-percentage v-if="showForm" v-bind:percentage="formula"></app-percentage>
 </div>
   </div>
 
@@ -37,9 +37,11 @@ font-family: system-ui;
 #body {
   display: flex;
 }
-button {
-  margin-left: 4em;
-  margin-top: 1em;
+#app > button {
+  margin-left: 3em;
+  margin-top: 3em;
+  font-style: roboto;
+  font-size: 1em;
 }
 
 

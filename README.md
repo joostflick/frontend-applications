@@ -1,4 +1,4 @@
-# prototype
+# Prototype risk indicator
 
 > risk indicator
 
@@ -15,9 +15,9 @@ npm run dev
 npm run build
 ```
 
-For more information see the [docs for vueify](https://github.com/vuejs/vueify).
-
 ## Dependencies
+
+I used the following dependencies in my application
 
 ### Babel
 
@@ -29,6 +29,35 @@ For more information see the [docs for vueify](https://github.com/vuejs/vueify).
 
 ### Vueify
 
+For more information see the [docs for vueify](https://github.com/vuejs/vueify).
+
 ### Watchify
 
 ## The idea
+
+An application to determine the risk for a child to later be placed outside of parental custody
+
+### Core functionality
+
+#### Risk indication
+
+Fill in the questions to get a risk indication
+
+#### Second Opinion
+
+See the 
+
+
+# TO DO
+
+Formula functionality
+
+Read me
+
+Styling
+
+Optional: 
+
+Second opinion
+
+

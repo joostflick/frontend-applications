@@ -30,9 +30,11 @@ export default {
     padding: 0.2em;
     border-color: black;
     border-style:groove;
+    border-radius: 25px;
     box-shadow: 10px 10px black;
-    background-color: blue;
+    background-color: #6290C3;
     color: white;
+    -webkit-text-stroke: 2px black;
 }
 </style>
 
