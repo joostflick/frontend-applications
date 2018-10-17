@@ -1,8 +1,17 @@
 <template>
   <div id="app">
-    <h1>Beantwoord de volgende vragen om een risicobepaling te maken</h1>
+    <app-header></app-header>
+    <button v-on:click="showForm = true">Risico indicator</button>
+    <button v-on:click="showForm = false">Second opinion</button>
+    <div id="body">
+    <div v-if="showForm">
     <app-form></app-form>
-    <h2>5 %</h2>
+    </div>
+    <div v-else>
+    <app-secondopinion></app-secondopinion>
+    </div>
+    <app-percentage v-bind:percentage="formula"></app-percentage>
+</div>
   </div>
 
 </template>
@@ -11,7 +20,10 @@
 
 export default {
   data () {
+    var num = 5;
     return {
+      formula: Number( ( 1 / ( 1 + Math.exp( -1 * ( -8.57219 + num ) ) ) * 100 ).toFixed( 2 ) ),
+      showForm: true
     }
   }
 }
@@ -19,7 +31,16 @@ export default {
 
 <style>
 html {
-font-family: sans-serif;
+font-family: system-ui;
 }
+
+#body {
+  display: flex;
+}
+button {
+  margin-left: 4em;
+  margin-top: 1em;
+}
+
 
 </style>

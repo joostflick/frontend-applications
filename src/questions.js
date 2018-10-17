@@ -1,5 +1,11 @@
 export default [
-    { question: "Geslacht ", options: ["Vrouw", "Man"] },
+    { 
+      question: "Geslacht ", 
+      options: [
+        {label: "Vrouw", value: "2"},
+        {label: "Man", value: "1"}
+      ] 
+    }, 
     {
       question: "Herkomst ouders",
       options: [

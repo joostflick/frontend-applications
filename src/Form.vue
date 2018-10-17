@@ -1,6 +1,6 @@
 <template>
     <div id="questionform">
-        <app-input v-for="question in questions" v-bind:key="question.id" :question='question' />
+        <app-input v-for="question in questions" v-bind:key="question.question" :question='question' />
     </div>
 </template>
 
@@ -14,3 +14,11 @@ export default {
     }
 }
 </script>
+<style>
+#questionform {
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+    margin-top: 1em;
+}
+</style>
