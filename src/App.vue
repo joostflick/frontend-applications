@@ -10,7 +10,7 @@
     <div v-else>
       <app-secondopinion></app-secondopinion>
     </div>
-    <app-percentage v-if="showForm" v-bind:percentage="percentage"></app-percentage>
+    <app-percentage v-if="showForm" v-bind:percentage="answer"></app-percentage>
 </div>
   </div>
 
@@ -26,7 +26,7 @@ export default {
       questions,
       optionsArray: new Array(21),
       showForm: true,
-      answer: Number,
+      answer: 0,
       percentage: 1
     }
   },
@@ -37,7 +37,8 @@ export default {
    this.$data.optionsArray.splice(value[1], 1, value[0])
    // sum of array in the formula credits
    var answer = Number( ( 1 / ( 1 + Math.exp( -1 * ( -8.57219 + (this.$data.optionsArray.reduce((a, b) => a + b, 0)) ) ) ) * 100 ).toFixed( 2 ) )
-   console.log(answer)
+    //change data 
+   this.$data.answer = answer
   })
  }
   }
