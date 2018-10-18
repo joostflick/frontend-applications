@@ -31,10 +31,9 @@ export default {
     border-color: black;
     border-style:groove;
     border-radius: 25px;
-    box-shadow: 10px 10px black;
+    box-shadow: 5px 5px black;
     background-color: #6290C3;
     color: white;
-    -webkit-text-stroke: 2px black;
 }
 </style>
 

@@ -5,7 +5,6 @@
 </template>
 <style>
 header > h1 {
-    -webkit-text-stroke: 2px black;
     font-size: 4em;
     margin: 0;
 }
