@@ -1,284 +1,206 @@
 export default [
     { 
       question: "Geslacht ", 
+      id: 0,
       options: [
-        {label: "Vrouw", value: "2"},
-        {label: "Man", value: "1"}
+        {label: "Vrouw", value: 2},
+        {label: "Man", value: 1}
       ] 
     }, 
     {
       question: "Herkomst ouders",
+      id: 1,
       options: [
-        {label: "Beide ouders Nederlands", value: "1"},
-        {label: "Beide ouders niet Nederlands", value: "1"},
-        {label: "Een van de ouders Nederlands en de andere niet Nederlands", value: "1"}
+        {label: "Beide ouders Nederlands", value: 1},
+        {label: "Beide ouders niet Nederlands", value: 2},
+        {label: "Een van de ouders Nederlands en de andere niet Nederlands", value: 2}
       ]
     },
     {
       question: "Type huishouden",
+      id: 2,
       options: [
-        {label: "Gehuwd paar met kinderen", value: "1"},
-        {label: "Eenouderhuishouden", value: "1"},
-        {label: "Eenpersoonshuishouden", value: "1"},
-        {label: "Gehuwd paar zonder kinderen", value: "1"},
-        {label: "Institutioneel huishouden", value: "1"},
-        {label: "Niet-gehuwd paar met kinderen", value: "1"},
-        {label: "Niet-gehuwd paar zonder kinderen", value: "1"},
-        {label: "Overig huishouden", value: "1"},
-        {label: "Onbekend huishouden", value: "1"}
+        {label: "Gehuwd paar met kinderen", value: 1},
+        {label: "Eenouderhuishouden", value: 1},
+        {label: "Eenpersoonshuishouden", value: 1},
+        {label: "Gehuwd paar zonder kinderen", value: 1},
+        {label: "Institutioneel huishouden", value: 1},
+        {label: "Niet-gehuwd paar met kinderen", value: 1},
+        {label: "Niet-gehuwd paar zonder kinderen", value: 1},
+        {label: "Overig huishouden", value: 1},
+        {label: "Onbekend huishouden", value: 1}
       ]
     },
-    { question: "Gescheiden ouders", options: ["Nee", "Ja"] },
+    { question: "Gescheiden ouders", 
+    id: 3,
+    options: [
+      {label: "Nee", value: 2},
+      {label: "Ja", value: 2}
+    ] 
+  },
     {
       question: "Voortijdig schoolverlaten",
+      id: 4,
       options: [
-        "Door in onderwijs",
-        "Onbekend",
-        "Niet van toepassing",
-        "Uit onderwijs met startkwalificatie",
-        "Voortijdig schoolverlaten"
+        {label: "Door in onderwijs", value: 1},
+        {label: "Onbekend", value: 1},
+        {label: "Niet van toepassing", value: 1},
+        {label: "Uit onderwijs met startkwalificatie", value: 1},
+        {label: "Voortijdig schoolverlaten", value: 1}
       ]
     },
     {
       question: "Soort onderwijs",
-      options: ["Regulier onderwijs", "Onbekend", "Niet-regulier onderwijs"]
+      id: 5,
+      options: [
+        {label: "Regulier onderwijs",  value: 1},
+        {label: "Onbekend",  value: 1},
+        {label: "Niet-regulier onderwijs", value: 1}
+      ]
     },
     {
       question: "Soort woning",
+      id: 6,
       options: [
-        "Eigen woning",
-        "Huurwoning met huurtoeslag",
-        "Huurwoning zonder huurtoeslag",
-        "Onbekend"
+        {label: "Eigen woning", value: 1},
+        {label: "Huurwoning met huurtoeslag", value: 1},
+        {label: "Huurwoning zonder huurtoeslag", value: 1},
+        {label: "Onbekend", value: 1}
       ]
     },
     {
       question: "Werk vader",
+      id: 7,
       options: [
-        "Werkend of overig actief",
-        "Geen werk en niet actief",
-        "Onbekend"
+        {label: "Werkend of overig actief", value: 2},
+        {label: "Geen werk en niet actief", value: 2},
+        {label: "Onbekend", value: 2}
       ]
     },
     {
       question: "Werk moeder",
+      id: 8,
       options: [
-        "Werkend of overig actief",
-        "Geen werk en niet actief",
-        "Onbekend"
+        {label: "Werkend of overig actief", value: 1},
+        {label: "Geen werk en niet actief", value: 1},
+        {label: "Onbekend", value: 1}
       ]
     },
-    { question: "Slachtoffer", options: ["Nee", "Ja"] },
+    { question: "Slachtoffer", 
+    id: 9,
+    options: [
+      {label: "Nee", value: 1},
+      {label: "Ja", value: 1}
+    ] 
+  },
     {
       question: "Traject vooraf",
+      id: 10,
       options: [
-        "Geen jeugdhulp zonder verblijf gehad",
-        "Jeugdhulp zonder verblijf gehad"
+        {label: "Geen jeugdhulp zonder verblijf gehad", value: 1},
+        {label: "Jeugdhulp zonder verblijf gehad", value: 1}
       ]
     },
     {
       question: "Leeftijd moeder bij geboorte",
+      id: 11,
       options: [
-        "Jonger dan 20 jaar",
-        "20 tot 25 jaar",
-        "25 tot 30 jaar",
-        "30 tot 35 jaar",
-        "35 tot 40 jaar",
-        "40 jaar en ouder"
+        {label: "Jonger dan 20 jaar", value: 1},
+        {label: "20 tot 25 jaar", value: 1},
+        {label: "25 tot 30 jaar", value: 1},
+        {label: "30 tot 35 jaar", value: 1},
+        {label: "35 tot 40 jaar", value: 1},
+        {label: "40 jaar en ouder", value: 1}
       ]
     },
     {
       question: "Leeftijd vader bij geboorte",
+      id: 12,
       options: [
-        "Jonger dan 25 jaar",
-        "25 tot 30 jaar",
-        "30 tot 35 jaar",
-        "35 tot 40 jaar",
-        "40 jaar en ouder"
+        {label: "Jonger dan 25 jaar", value: 2},
+        {label: "25 tot 30 jaar", value: 2},
+        {label: "30 tot 35 jaar", value: 2},
+        {label: "35 tot 40 jaar", value: 2},
+        {label: "40 jaar en ouder", value: 2}
       ]
     },
-    { question: "Vader of moeder verdacht", options: ["Nee", "Ja"] },
-    { question: "Kind verdacht", options: ["Nee", "Ja"] },
-    { question: "Halt delict", options: ["Nee", "Ja"] },
+    { question: "Vader of moeder verdacht", 
+    id: 13,
+    options: [
+      {label: "Nee",  value: 2},
+      {label: "Ja", value: 2}
+    ] 
+  },
+    { question: "Kind verdacht", 
+    id: 14,
+    options: [
+      {label: "Nee", value: 2},
+      {label: "Ja", value: 2}
+    ] 
+  },
+    { question: "Halt delict", 
+    id: 15,
+    options: [
+      {label: "Nee", value: 2},
+      {label: "Ja", value: 2}
+    ] 
+  },
     {
       question: "Verandering onderwijs niveau",
-      options: ["Opschalen of gelijk blijvend", "Afschalen", "Onbekend"]
+      id: 16,
+      options: [
+        {label: "Opschalen of gelijk blijvend", value: 1.1},
+        {label: "Afschalen", value: 1.1},
+        {label: "Onbekend", value: 1.1}
+      ]
     },
     {
       question: "Leeftijdsverschil ouders",
-      options: ["Minder dan 5 jaar", "Meer dan 5 jaar"]
+      id: 17,
+      options: [
+      {label: "Minder dan 5 jaar", value: 2},
+      {label: "Meer dan 5 jaar", value: 2}
+    ]
     },
     {
       question: "Actueel onderwijs niveau",
+      id: 18,
       options: [
-        "Basisonderwijs",
-        "Onderwijs onbekend",
-        "Vmbo b/k, mbo 1 of mbo 2",
-        "Vmbo g/t, mbo 3 of mbo 4",
-        "Havo onderbouw, Havo bovenbouw of Hbo bachelor",
-        "Vwo of Wo bachelor"
+        {label: "Basisonderwijs", value: 1},
+        {label: "Onderwijs onbekend", value: 1},
+        {label: "Vmbo b/k, mbo 1 of mbo 2", value: 1},
+        {label: "Vmbo g/t, mbo 3 of mbo 4", value: 1},
+        {label: "Havo onderbouw, Havo bovenbouw of Hbo bachelor", value: 1},
+        {label: "Vwo of Wo bachelor", value: 1}
       ]
     },
     {
       question: "Hoogst behaalde diploma vader",
+      id: 19,
       options: [
-        "Onderwijs onbekend",
-        "Vmbo b/k, mbo 1 of mbo 2",
-        "Vmbo g/t, mbo 3 of mbo 4",
-        "Havo onderbouw, Havo bovenbouw, Hbo bachelor of Hbo master",
-        "Vwo, Wo bachelor of Wo master"
+        {label: "Onderwijs onbekend", value: 1},
+        {label: "Vmbo b/k, mbo 1 of mbo 2", value: 1},
+        {label: "Vmbo g/t, mbo 3 of mbo 4", value: 1},
+        {label: "Havo onderbouw, Havo bovenbouw, Hbo bachelor of Hbo master", value: 1},
+        {label: "Vwo, Wo bachelor of Wo master", value: 1}
       ]
     },
     {
       question: "Hoogst behaalde diploma moeder",
+      id: 20,
       options: [
-        "Onderwijs onbekend",
-        "Vmbo b/k, mbo 1 of mbo 2",
-        "Vmbo g/t, mbo 3 of mbo 4",
-        "Havo onderbouw, Havo bovenbouw, Hbo bachelor of Hbo master",
-        "Vwo, Wo bachelor of Wo master"
+        {label: "Onderwijs onbekend", value: 1},
+        {label: "Vmbo b/k, mbo 1 of mbo 2", value: 1},
+        {label: "Vmbo g/t, mbo 3 of mbo 4", value: 1},
+        {label: "Havo onderbouw, Havo bovenbouw, Hbo bachelor of Hbo master", value: 1},
+        {label: "Vwo, Wo bachelor of Wo master", value: 1}
       ]
     },
-    { question: "Zwaar traject", options: ["Nee", "Ja"] }
+    { question: "Zwaar traject", 
+    id: 21,
+    options: [
+      {label: "Nee", value: 2.5},
+      {label: "Ja", value: 2.5}
+    ] 
+  }
   ];
-  const questions = [
-  { question: "Geslacht ", options: ["Vrouw", "Man"] },
-  {
-    question: "Herkomst ouders",
-    options: [
-      "Beide ouders Nederlands",
-      "Beide ouders niet Nederlands",
-      "Een van de ouders Nederlands en de andere niet Nederlands",
-      "Onbekend"
-    ]
-  },
-  {
-    question: "Type huishouden",
-    options: [
-      "Gehuwd paar met kinderen",
-      "Eenouderhuishouden",
-      "Eenpersoonshuishouden",
-      "Gehuwd paar zonder kinderen",
-      "Institutioneel huishouden",
-      "Niet-gehuwd paar met kinderen",
-      "Niet-gehuwd paar zonder kinderen",
-      "Overig huishouden",
-      "Onbekend"
-    ]
-  },
-  { question: "Gescheiden ouders", options: ["Nee", "Ja"] },
-  {
-    question: "Voortijdig schoolverlaten",
-    options: [
-      "Door in onderwijs",
-      "Niet van toepassing",
-      "Uit onderwijs met startkwalificatie",
-      "Voortijdig schoolverlaten",
-      "Onbekend"
-    ]
-  },
-  {
-    question: "Soort onderwijs",
-    options: ["Regulier onderwijs", "Niet-regulier onderwijs", "Onbekend"]
-  },
-  {
-    question: "Soort woning",
-    options: [
-      "Eigen woning",
-      "Huurwoning met huurtoeslag",
-      "Huurwoning zonder huurtoeslag",
-      "Onbekend"
-    ]
-  },
-  {
-    question: "Werk vader",
-    options: [
-      "Werkend of overig actief",
-      "Geen werk en niet actief",
-      "Onbekend"
-    ]
-  },
-  {
-    question: "Werk moeder",
-    options: [
-      "Werkend of overig actief",
-      "Geen werk en niet actief",
-      "Onbekend"
-    ]
-  },
-  { question: "Slachtoffer", options: ["Nee", "Ja"] },
-  {
-    question: "Traject vooraf",
-    options: [
-      "Geen jeugdhulp zonder verblijf gehad",
-      "Jeugdhulp zonder verblijf gehad",
-      "Onbekend"
-    ]
-  },
-  {
-    question: "Leeftijd moeder bij geboorte",
-    options: [
-      "Jonger dan 20 jaar",
-      "20 tot 25 jaar",
-      "25 tot 30 jaar",
-      "30 tot 35 jaar",
-      "35 tot 40 jaar",
-      "40 jaar en ouder",
-      "Onbekend"
-    ]
-  },
-  {
-    question: "Leeftijd vader bij geboorte",
-    options: [
-      "Jonger dan 25 jaar",
-      "25 tot 30 jaar",
-      "30 tot 35 jaar",
-      "35 tot 40 jaar",
-      "40 jaar en ouder",
-      "Onbekend"
-    ]
-  },
-  { question: "Vader of moeder verdacht", options: ["Nee", "Ja", "Onbekend"] },
-  { question: "Kind verdacht", options: ["Nee", "Ja", "Onbekend"] },
-  { question: "Halt delict", options: ["Nee", "Ja", "Onbekend"] },
-  {
-    question: "Verandering onderwijs niveau",
-    options: ["Opschalen of gelijk blijvend", "Afschalen", "Onbekend"]
-  },
-  {
-    question: "Leeftijdsverschil ouders",
-    options: ["Minder dan 5 jaar", "Meer dan 5 jaar", "Onbekend"]
-  },
-  {
-    question: "Actueel onderwijs niveau",
-    options: [
-      "Basisonderwijs",
-      "Vmbo b/k, mbo 1 of mbo 2",
-      "Vmbo g/t, mbo 3 of mbo 4",
-      "Havo onderbouw, Havo bovenbouw of Hbo bachelor",
-      "Vwo of Wo bachelor",
-      "Onbekend"
-    ]
-  },
-  {
-    question: "Hoogst behaalde diploma vader",
-    options: [
-      "Vmbo b/k, mbo 1 of mbo 2",
-      "Vmbo g/t, mbo 3 of mbo 4",
-      "Havo onderbouw, Havo bovenbouw, Hbo bachelor of Hbo master",
-      "Vwo, Wo bachelor of Wo master",
-      "Onbekend"
-    ]
-  },
-  {
-    question: "Hoogst behaalde diploma moeder",
-    options: [
-      "Vmbo b/k, mbo 1 of mbo 2",
-      "Vmbo g/t, mbo 3 of mbo 4",
-      "Havo onderbouw, Havo bovenbouw, Hbo bachelor of Hbo master",
-      "Vwo, Wo bachelor of Wo master",
-      "Onbekend"
-    ]
-  },
-  { question: "Zwaar traject", options: ["Nee", "Ja", "Onbekend"] }
-];

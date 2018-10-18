@@ -12,6 +12,8 @@ Vue.component('app-header', Header)
 Vue.component('app-percentage', Percentage)
 Vue.component('app-secondopinion', SecondOpinion)
 
+export const serverBus = new Vue();
+
 
 new Vue({
   el     : '#app', 

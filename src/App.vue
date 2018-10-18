@@ -5,28 +5,43 @@
     <button v-on:click="showForm = false">Second opinion</button>
     <div id="body">
     <div v-if="showForm">
-    <app-form></app-form>
+      <app-form></app-form>
     </div>
     <div v-else>
-    <app-secondopinion></app-secondopinion>
+      <app-secondopinion></app-secondopinion>
     </div>
-    <app-percentage v-if="showForm" v-bind:percentage="formula"></app-percentage>
+    <app-percentage v-if="showForm" v-bind:percentage="percentage"></app-percentage>
 </div>
   </div>
 
 </template>
 
 <script>
+import { serverBus } from './main';
+import { questions } from './questions';
 
 export default {
   data () {
-    var num = 5;
     return {
-      formula: Number( ( 1 / ( 1 + Math.exp( -1 * ( -8.57219 + num ) ) ) * 100 ).toFixed( 2 ) ),
-      showForm: true
+      questions,
+      optionsArray: new Array(21),
+      showForm: true,
+      answer: Number,
+      percentage: 1
     }
+  },
+ created() {
+  // receive in bus
+    serverBus.$on('questionValue', (value) => {
+      //add to total array
+   this.$data.optionsArray.splice(value[1], 1, value[0])
+   // sum of array in the formula credits
+   var answer = Number( ( 1 / ( 1 + Math.exp( -1 * ( -8.57219 + (this.$data.optionsArray.reduce((a, b) => a + b, 0)) ) ) ) * 100 ).toFixed( 2 ) )
+   console.log(answer)
+  })
+ }
   }
-}
+
 </script>
 
 <style>
