@@ -18,16 +18,14 @@
 
 <script>
 import { serverBus } from './main';
-import { questions } from './questions';
+import questions from './questions';
 
 export default {
   data () {
     return {
-      questions,
-      optionsArray: new Array(21),
+      optionsArray: new Array(questions.length),
       showForm: true,
-      answer: 0,
-      percentage: 1
+      answer: 0
     }
   },
  created() {
