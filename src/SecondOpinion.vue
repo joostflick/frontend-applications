@@ -1,6 +1,6 @@
 <template>
 <div id='bodySecond'>
-    <h1>Geef hier de second opinion op andere risico indicaties</h1>
+    <h1>Geef hier je second opinion op andere risico indicaties</h1>
     <h2>Indicatie 1</h2>
     <p>Dossier 234234 - 6,25%</p>
     <button>Bekijk</button>
