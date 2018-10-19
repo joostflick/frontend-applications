@@ -34,7 +34,7 @@ export default {
     serverBus.$on('questionValue', (value) => {
       //add to total array
    this.$data.optionsArray.splice(value[1], 1, value[0])
-   // sum of array in the formula credits
+   // sum of array in the formula credits to folkert jan on slack
    var answer = Number( ( 1 / ( 1 + Math.exp( -1 * ( -8.57219 + (this.$data.optionsArray.reduce((a, b) => a + b, 0)) ) ) ) * 100 ).toFixed( 2 ) )
    //change data 
    this.$data.answer = answer
