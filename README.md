@@ -59,4 +59,32 @@ Fill in the questions to get a risk indication, this live reloads every time a q
 
 Still in a conceptual phase. Upload your risk assesment for other people to view and rate, so you aren't alone in your decisions. This risk assesment would be completely anonymous as not to reveal the childs identity.
 
+An addition to this would be a text field beneath every question where the person filling out the risk assesment can elaborate on the answer. This helps other professionals judge when giving their feedback.
+
+## Project structure
+
+![screencap structure](./screencap2.png "Screen capture structure")
+
+Main component is app, main application logic happens here (calculating the percentage).
+
+In the form component the questions.js file is imported. Form creates a input component for each question and passes it a question object.
+
+In the input component the question object is used to dynamically display the right amount of options.
+
+To calculate the total value of all the answers, each answer is linked to the question id and passed to an array in the app component which has as many empty spots as there are questions.
+
+```javascript
+optionsArray: new Array(questions.length)
+```
+```javascript
+this.$data.optionsArray.splice(value[1], 1, value[0])
+```
+Here value[1] is the id of the question, which is used as the index to put the value into the array. value[0] is the actual value.
+
+The sum of this array is then passed to the formula.
+```javascript
+this.$data.optionsArray.reduce((a, b) => a + b, 0)
+```
+
+After this the final answer is pushed to the percentage component to display it.
 
